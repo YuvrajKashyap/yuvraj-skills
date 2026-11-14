@@ -1,0 +1,34 @@
+{
+  "source": "https://github.com/mattpocock/skills",
+  "revision": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+  "source_path": "skills/productivity/handoff",
+  "installed_date": "2026-11-06",
+  "license": "MIT",
+  "customized": true,
+  "original_entrypoint": "upstream/SKILL.original.md",
+  "original_sha256": "4CBB043950DAD2FFD3662FF1A5A0B51AE676004B5CAE10E3787E8EE7A4EE69D3",
+  "adaptations": [
+    "Native-loader or file-read fallback",
+    "Host temporary directory and text-only fallback",
+    "Evidence and authorization handoff fields",
+    "Preserved explicit invocation in frontmatter and Codex policy"
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "0E7AC423BF2C6E223B7C5B156F8CF72DA49D748E56A1641402C31F22AD07DBB5"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "788F7E67AA47BB0BF8F3B901AE918357DAB113710D4CC22517D574179EE18E1D"
+    },
+    {
+      "path": "agents\\openai.yaml",
+      "sha256": "A1499D95ABD8447558C535FE5554ADCC3C9B988A0A39264A6283D430EFFE1E94"
+    },
+    {
+      "path": "upstream\\SKILL.original.md",
+      "sha256": "4CBB043950DAD2FFD3662FF1A5A0B51AE676004B5CAE10E3787E8EE7A4EE69D3"
+    }
+  ]
+}
