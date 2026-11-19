@@ -78,4 +78,4 @@ The links identify the upstream source for each package. Check its included term
 
 Handoff and systematic debugging include portability adaptations. The design-taste-frontend example catalog is curated for this collection, and links in the combined React View Transitions guide resolve within its package. Each upstream package retains its own terms.
 
-The [UI UX Pro Max searchable design library](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) is available separately from its maintainers.
+The [UI UX Pro Max searchable design library](skills/ui-ux-pro-max) includes a filtered dataset, local Python search, and the original MIT license from [Next Level Builder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill).

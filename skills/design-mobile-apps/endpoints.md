@@ -6,6 +6,8 @@ Every list endpoint accepts `limit` (1–100, default 50) and `offset` (≥0), a
 
 ## Projects
 
+For a complete list, start at offset 0. Consume the returned data array, then advance the offset by the number of items actually returned. Stop when the next offset reaches the reported total or the current page is empty. If the list changes during traversal, deduplicate by resource ID.
+
 ### List projects
 
 ```http

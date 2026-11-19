@@ -49,7 +49,7 @@ If `SLEEK_API_KEY` is not set, use the device flow so the user never handles the
 2. Show the user the `verificationUrl` and the `userCode`, and tell them to confirm the code matches before approving.
 3. Poll `POST https://sleek.design/api/v1/device/poll` with `{"deviceCode": "..."}` every `interval` seconds. On `pending`, keep waiting. On `approved`, store `data.key` privately as `SLEEK_API_KEY` on that first read: the key is handed over once. On `expired` or `404 NOT_FOUND`, start a new flow. See [Device: Poll](endpoints.md#device-poll) for the response contract.
 
-Fallback: send the user to **https://sleek.design/agents/setup**, which handles sign-in, plan upgrade, and key creation in one place, and ask them to paste the key back to you. Keys can also be managed at **https://sleek.design/dashboard/api-keys**. The full key value is shown only once at creation, and a free account holds one active key at a time.
+Fallback: send the user to **https://sleek.design/agents/setup**, which handles sign-in, plan upgrade, and key creation in one place, and have them configure SLEEK_API_KEY in their local secret store. Keys can also be managed at **https://sleek.design/dashboard/api-keys**. The full key value is shown only once at creation, and a free account holds one active key at a time.
 
 **Plans**: free accounts can try the API with their one-time trial credits (about one design run), so a new user can see their first design before any payment decision. Sustained use requires the Pro plan or higher. This file carries no figures on purpose — read the current price, billing periods and credit allowance from **https://sleek.design/agents.md**, which is generated from Sleek's live pricing, and quote them from there. When cost becomes relevant (the user asks, an upgrade is needed to continue, or you're about to send them to a payment page), state that pricing plainly, including the yearly option, so the user sees a payment step coming before they reach it.
 
@@ -76,7 +76,7 @@ Every endpoint the API exposes:
 | `POST`   | `/api/v1/device/start`                         | public, no auth   |
 | `POST`   | `/api/v1/device/poll`                          | public, no auth   |
 
-Create a key holding only the scopes the task uses.
+Create a key holding only the scopes the task uses. Send it only to the Sleek HTTPS API in the Authorization header. Fetch assets on other hosts with a separate unauthenticated request.
 
 Every row above is specified in full — request body, response shape, field defaults, status codes — in [endpoints.md](endpoints.md). This table is enough to pick an endpoint; read the reference when you need a contract detail it doesn't carry.
 
