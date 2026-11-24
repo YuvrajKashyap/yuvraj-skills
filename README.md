@@ -13,6 +13,7 @@ Start with [skill-synthesis](skills/skill-synthesis) to choose guidance for a pr
 | [create-engineering-team](skills/create-engineering-team) | Coordinate engineering ownership, isolated work, review, and integration. |
 | [clean-codebase](skills/clean-codebase) | Make a codebase easier to navigate, change, and hand over. |
 | [skill-library-maintenance](skills/skill-library-maintenance) | Audit skill inventories, reconcile variants, and verify provider discovery. |
+| [frontend-directions](skills/frontend-directions) | Build and compare complete switchable frontends, then combine the strongest ideas. |
 | [max-frontend](skills/max-frontend) | Design expressive frontends with cinematic motion and responsive interactions. |
 | [mobile-frontend](skills/mobile-frontend) | Design and test thumb-friendly layouts, gestures, and software-keyboard behavior. |
 | [invisible-performance](skills/invisible-performance) | Reduce rendering and loading costs while preserving the visible experience. |
